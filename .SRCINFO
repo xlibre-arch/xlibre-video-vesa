@@ -1,0 +1,21 @@
+pkgbase = xlibre-video-vesa
+	pkgdesc = XLibre vesa video driver
+	pkgver = 2.6.0.1
+	pkgrel = 1
+	url = https://github.com/X11Libre/xf86-video-vesa
+	arch = aarch64
+	arch = x86_64
+	groups = xlibre-drivers
+	license = MIT
+	makedepends = xlibre-server-devel
+	makedepends = X-ABI-VIDEODRV_VERSION=28.0
+	depends = glibc
+	provides = xf86-video-vesa
+	conflicts = xf86-video-vesa
+	conflicts = xorg-server<21.1.1
+	conflicts = X-ABI-VIDEODRV_VERSION<28
+	conflicts = X-ABI-VIDEODRV_VERSION>=29
+	source = xf86-video-vesa-xlibre-xf86-video-vesa-2.6.0.1.tar.gz::https://github.com/X11Libre/xf86-video-vesa/archive/refs/tags/xlibre-xf86-video-vesa-2.6.0.1.tar.gz
+	b2sums = 15f9aebdd30d17cf0c2fbb0497ba7f16f7225f311ba6cef7cc86db7e8a65e2558cf94df7985ac86e16dd78251c354a45b8f760c33ac79ef5c70cbdb9b87a8ba5
+
+pkgname = xlibre-video-vesa
