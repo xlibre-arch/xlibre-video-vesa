@@ -3,14 +3,14 @@
 _basename="xf86-video-vesa"
 pkgname="${_basename//xf86/xlibre}"
 pkgver=2.6.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="XLibre vesa video driver"
 arch=('aarch64' 'x86_64')
 url="https://github.com/X11Libre/${_basename}"
 license=('MIT')
 depends=('glibc')
 makedepends=('xlibre-server-devel' 'X-ABI-VIDEODRV_VERSION=28.0')
-provides=("${_basename}")
+# provides=("${_basename}")
 conflicts=("${_basename}" 'xorg-server<21.1.1' 'X-ABI-VIDEODRV_VERSION<28' 'X-ABI-VIDEODRV_VERSION>=29')
 groups=('xlibre-drivers')
 _pkgsrc="${_basename}-xlibre-${_basename}-${pkgver}"
