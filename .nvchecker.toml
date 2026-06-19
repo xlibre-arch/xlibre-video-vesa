@@ -1,5 +1,0 @@
-[xlibre-video-vesa]
-source = "git"
-git = "https://github.com/x11libre/xf86-video-vesa.git"
-include_regex = "xlibre-xf86-video-vesa-.*"
-prefix = "xlibre-xf86-video-vesa-"
